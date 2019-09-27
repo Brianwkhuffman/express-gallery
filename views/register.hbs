@@ -1,0 +1,19 @@
+<h1>Please Register as a user:</h1>
+{{err}}
+<form action="/register" method="POST">
+    <label for="username">Username:</label><br>
+    <input type="text" name="username" />
+
+    <br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" />
+
+    <br><br>
+
+    <button>Submit</button>
+</form>
+<h3>
+    Already registered?
+</h3>
+<a href="/login"><button>Login</button></a>

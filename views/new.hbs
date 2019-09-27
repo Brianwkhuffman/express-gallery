@@ -1,0 +1,13 @@
+<div class="new">
+    {{err}}
+    <form action="/new" class="input" method="post" autocomplete="off">
+        Picture URL:<br>
+        <input type="text" name='url' placeholder="url">
+        <br>Description:<br>
+        <input type="text" name='description' placeholder="description">
+        <input type="hidden" name='user_id' value='{{userID}}'>
+        <br> <input type="submit" value='Submit'>
+
+    </form>
+    <br><a href="/gallery"><button class="newpic">To Gallery</button></a>
+</div>

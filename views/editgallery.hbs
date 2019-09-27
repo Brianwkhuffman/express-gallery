@@ -1,0 +1,22 @@
+<div class='edit'>
+    <form action="/gallery/{{id}}?_method=put" method="post" autocomplete="off">
+        <input type="hidden" name='id' value='{{id}}'>
+        <input type="hidden" name='name' value='{{name}}'>
+        <br>URL:
+        <br><input type="text" name='url' value='{{url}}'>
+        <br>Description
+        <br><input type="text" name='description' value='{{description}}'>
+        <br>
+        <img src="{{url}}" alt="">
+        <br><button type="submit">Submit Changes</button>
+    </form>
+
+    <br>
+    <form action="/gallery/{{id}}?_method=delete" method='post'>
+        <input type="hidden" name='id' value={{id}}>
+        <input type="submit" value='Delete'>
+    </form>
+
+
+    <br><a href="/gallery/{{id}}"><button class="goBack">Back to Post</button></a>
+</div>
