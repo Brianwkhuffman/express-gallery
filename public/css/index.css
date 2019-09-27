@@ -1,0 +1,31 @@
+body{
+    background-color: cornflowerblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.user{
+    text-align: center;
+}
+.description{
+    text-align: center;
+}
+.image{
+    border: 3px solid black;
+    padding: 10px;
+    margin: 30px;
+    width: 800px;
+    height: auto;
+
+}
+/* 404 hbs text align on image */
+.error{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.text{
+    position: absolute;
+    top: 5%;
+    left: 40%;
+}

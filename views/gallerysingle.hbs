@@ -1,0 +1,12 @@
+<div class="gallerysingle">
+    <h1>Uploaded by User: {{gallery.user.username}}</h1>
+    <br>
+    <img src="{{gallery.url}}" alt="">
+    <p class="description">
+        Description: <br>{{gallery.description}}
+    </p>
+    <br><a href="/gallery"><button>Back to Gallery</button></a>
+    {{#if loggedIn}}
+    <br><a href="/gallery/{{gallery.id}}/edit"><button>Edit Post</button></a>
+    {{/if}}
+</div>
